@@ -77,4 +77,12 @@ return [
         public_path('storage') => storage_path('app/public'),
     ],
 
+
+    'animal_images' => [
+        'driver' => 'local',
+        'root' => storage_path('app/public/animal_images'),
+        'url' => env('APP_URL').'/storage/animal_images',
+        'visibility' => 'public',
+    ],
+
 ];
